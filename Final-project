@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gino's Paninos</title>
+  <style>
+    #main-title{
+      font-family: Montserrat;
+      text-align: center;
+      background-color:#ffb31b;
+      font-family:'Courier New';
+    }
+    #header-img{
+      border-radius: 20%;
+      width: 80%;
+      max-width: 900px;
+      height: 600px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .img-panino{
+      border-radius: 20%;
+      max-width: 600px;
+      height: 350px;
+      padding: 40px;
+      margin: 0;
+      display: block;
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    figure {
+      background-color: #ffb31b;
+    }
+
+    #order-form-section {
+      text-align: center;
+    }
+
+    .panino-description{
+      text-align: center;
+    }
+
+    h2, h3, p {
+    font-family:'Courier New';
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="main-title">GINO'S PANINOS</h1>
+    <figure>
+      <img id="header-img" src="https://rs-menus-api.roocdn.com/images/b3c48d94-855e-4847-a56a-4a5b4a55c885/image.jpeg" alt="picture of a sandwich with salamella on a cutting board">
+    </figure>
+    <nav>
+      <ul>
+        <li><a href="#menu-section">Menu</a></li>
+        <li><a href="#order-form-section">Order Form</a></li>
+      </ul>
+    </nav>
+  </header>
+<main>
+  <section  id="menu-section">
+    <h2 style="text-align: center;">The Menu</h2>
+      <article>
+        <h3>Lo Spinagino</h3>
+        <figure>
+          <img class="img-panino" src="https://ginopanino.it/img/Spinagino.b6755ff7.jpg" alt="picture of spinagino" style="">
+          <figcaption>Lo Spinagino</figcaption>
+        </figure>
+
+        <p class="panino-description">[1]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+          <i>€9.99</i></p>
+      </article>
+
+      <article>
+        <h3>La Bestia</h3>
+        <figure>
+          <img class="img-panino" src="https://ginopanino.it/img/Bestia.9abf1cca.jpg" alt="picture of bestia">
+          <figcaption>La Bestia</figcaption>
+        </figure>
+        <p class="panino-description">[2]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+          <i>€9.99</i></p>
+      </article>
+
+      <article>
+        <h3>Il Liscio</h3>
+        <figure>
+          <img class="img-panino" src="https://ginopanino.it/img/Liscio.930e40b0.jpg" alt="picture of liscio">
+          <figcaption>Il Liscio</figcaption>
+        </figure>
+        <p class="panino-description">[3]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+          <i>€9.99</i></p>
+      </article>
+  </section>
+  <hr>
+  <section id="order-form-section">
+    <h2>Place Your Order</h2>
+    <form>
+      <label for="number-input" >Enter item number</label><br>
+      <input id="number-input" type="number"  min="0" max="3" required>
+      <br>
+      <br>
+      <label>Would you like to add anything?</label><br>
+      <input type="checkbox"> Tomato
+      <input type="checkbox"> Pickles
+      <input type="checkbox"> Lettuce
+      <input type="checkbox"> Ham
+      <br>
+      <br>
+      <label>Would you like to add a sauce? (Max 1)</label><br>
+      <input type="radio" name="option"> Ketchup <br>
+      <input type="radio" name="option"> Mayo <br>
+      <input type="radio" name="option"> Mustard <br>
+      <input type="radio" name="option"> Tabasco <br>
+      <input type="radio" name="option"> None <br>
+      <br>
+      <br>
+      <label>Please enter any special requests</label><br>
+      <textarea placeholder="Allergies and special requests" rows="10" cols="60"></textarea>
+      <br>
+      <br>
+      <input type="submit" value="Go To Checkout">
+    </form>
+  </section>
+</main>
+<footer>
+  <p>Made with love by <i>Buterbrodik</i></p>
+</footer>
+</body>
+</html>
